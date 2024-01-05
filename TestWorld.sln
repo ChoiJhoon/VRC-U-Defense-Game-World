@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{d8145180-f5c5-1822-9264-e03504bcfc85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QvPen", "QvPen.csproj", "{1c8a9712-717e-dcd5-44da-92b80b94ad19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{d8145180-f5c5-1822-9264-e03504bcfc85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d8145180-f5c5-1822-9264-e03504bcfc85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1c8a9712-717e-dcd5-44da-92b80b94ad19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1c8a9712-717e-dcd5-44da-92b80b94ad19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
