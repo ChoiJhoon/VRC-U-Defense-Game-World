@@ -1,0 +1,29 @@
+1. 총을 임포트 하기 전 UdonSharp를 설치해주세요!
+UdonSharp는 C#파일을 Vrchat에서 사용 가능한 Udon파일로 변환해주는 역할을 합니다!
+
+2.TeleportGun을 임포트 한 후 Hierarchy에 끌어놔주세요
+
+3."BulletParticle" 와 "AimCam"은 꺼져있어야합니다.
+인스펙터에서 체크를 풀어져 있어햐 합니다.
+
+4.텔레포트 위치 지정
+총의 하위 오브젝트 "AimCam"에서 컴포넌트 중 Udon Behavior를 찾습니다
+Udon Behavior 안에 O_Vector3라는 칸이 있는데 거기에 총에 맞은 후 텔레포트될 좌표를 넣으시면 됍니다
+
+5. 작동을 하지 않는다면
+gun안에 있는 Udon Behavior로 가주세요
+Udon Behavior 안의 인자들이 잘 연결되었는지 확인해주세요
+Reload	Time 0.2 
+Gun 	"BulletParticle"
+Gunsound "Gunsound"
+Aim 	"AimCam"
+
+
+6.문제나 버그가 있다면 디스코드
+rage147#2898 로 DM보내주세요!
+
+아래 블로그에 코드 설명을 써두었습니다
+https://blog.naver.com/dls32208/222519074141
+
+모델은 부스에서 가져왔습니다
+﻿https://booth.pm/ja/items/2683757﻿
