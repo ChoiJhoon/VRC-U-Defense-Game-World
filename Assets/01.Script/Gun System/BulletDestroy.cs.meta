@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: a584bd2bd79e52c4f968e8ba7b3573d8
+guid: 24812d219231e4343b4359a6683aa363
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - _udonSharpBackingUdonBehaviour: {instanceID: 0}
-  - bulletObj: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

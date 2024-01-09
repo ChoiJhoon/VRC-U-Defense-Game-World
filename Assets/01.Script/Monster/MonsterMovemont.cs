@@ -7,7 +7,6 @@ public class MonsterMovemont : UdonSharpBehaviour
 {
     private float Move = 1f;//몬스터의 이동 속도
     private float Velocity = 0f;//위치값
-    public int MobsHpCount = 0; //몬스터들의 HP
 
     void Start()
     {
@@ -23,6 +22,7 @@ public class MonsterMovemont : UdonSharpBehaviour
         current.z -= Velocity * Time.deltaTime;
         this.transform.position = current;
     }
+
     public GameObject objDestroy; // A 오브젝트를 Inspector에서 연결
     private void OnTriggerEnter(Collider other){
         if (other.gameObject == objDestroy){

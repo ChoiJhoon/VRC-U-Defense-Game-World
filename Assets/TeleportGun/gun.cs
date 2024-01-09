@@ -85,8 +85,5 @@ public class gun : UdonSharpBehaviour
         if(Networking.LocalPlayer.IsUserInVR()==false)
             Computer = 0;
         Aim.SetActive(false);
-
     }
 }
-
- 
