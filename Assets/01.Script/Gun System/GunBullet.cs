@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Security.Cryptography;
 using UdonSharp;
 using UnityEngine;
 using UnityEngine.InputSystem.Utilities;
@@ -43,41 +44,25 @@ public class GunBullet : UdonSharpBehaviour
 		//이유 : 처음에 실행할 때 SendCustomEventDelayedSeconds으로 실행된다.
 	}
 
-	/*
-	public override void OnPickup()
-	{
-		//들자마자 총이 발사되는
-		//while문 언젠가 종료가 되어야함.
-
-		//VRC내에 몇초 후에 실행을 시키는 코드
-		//oneShoot();
-		canShoot = true;
-		if (canShoot == true)
-		{
-			SendCustomEventDelayedSeconds(nameof(ShootAfterDelay), gunShootingSpeed);
-		}
-		else
-		{
-			return;
-		}
-		//SendCustomEventDelayedSeconds("oneShoot", gunShootingSpeed);//이벤트로 인식시키려면 public이여야한다.
-		//또는 업데이트를 하여서 조건문을 걸어줘서 시간이 지나는 걸 측정시키는 것		
-	}*/
 
 	public override void OnPickup()
 	{
 		//원래 oneShoot();였지만 bool로 isShooting 발사여부 체크를 한다.
 		isShooting = true; //
+		
 		oneShoot(); //최초 발사
+	
 	}
 
-	//숙제. 드랍시 총알이 안날라가게.
 	public override void OnDrop()
 	{
 		isShooting = false; // 발사 중지
 	}
 
-	//나중. OnPickupUseDown을 사용해서 총알 ON/OFF 시스템 작성
-
+	//1. update
+	//2. ISR 방식 : gunShootingSpeed + 마우스 클릭한 시간(shootingTIme)
+	//3. time 쪼개기
+	//0.02초로 나눠서 fixedUpdate
 }
 
+//나중. OnPickupUseDown을 사용해서 총알 ON/OFF 시스템 작성

@@ -61,6 +61,8 @@
     <Compile Include="Assets\01.Script\Gun System\GunBullet.cs" />
     <Compile Include="Assets\01.Script\Gun System\PickUpEvent.cs" />
     <Compile Include="Assets\01.Script\Gun System\TFTSystemScript.cs" />
+    <Compile Include="Assets\01.Script\Monster\HP\LifePoint.cs" />
+    <Compile Include="Assets\01.Script\Monster\HP\MobsLifeSystem.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterCreationscript.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterMovemont.cs" />
     <Compile Include="Assets\01.Script\Test.cs" />
@@ -124,11 +126,32 @@
     <Compile Include="Assets\UdonSharp\UtilityScripts\WorldAudioSettings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Tolyscripts\TolysUdonCombatSystem\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TeleportGun\읽어주세요.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Examples and Samples Have Moved.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TeleportGun\readme.txt" />
     <None Include="Assets\UdonSharp\UtilityScripts\ExampleUtilityTemplate.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

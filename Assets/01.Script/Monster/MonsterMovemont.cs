@@ -5,7 +5,7 @@ using VRC.Udon;
 
 public class MonsterMovemont : UdonSharpBehaviour
 {
-    private float Move = 1f;//몬스터의 이동 속도
+    public float MoveSpeed = 0.5f;//몬스터의 이동 속도
     private float Velocity = 0f;//위치값
 
     void Start()
@@ -17,7 +17,7 @@ public class MonsterMovemont : UdonSharpBehaviour
     {
         Vector3 current = this.transform.position;
 
-        Velocity += Move * Time.deltaTime;
+        Velocity += MoveSpeed * Time.deltaTime;
 
         current.z -= Velocity * Time.deltaTime;
         this.transform.position = current;
