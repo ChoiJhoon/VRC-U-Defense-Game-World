@@ -3,6 +3,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using System.Diagnostics;
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 
 public class MonsterCreationscript : UdonSharpBehaviour
 {
