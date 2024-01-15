@@ -54,10 +54,43 @@ public class GunBullet : UdonSharpBehaviour
 	
 	}
 
+	private Vector3 initialPosition; //초기위치
+	private Quaternion initialRotation; //초기방향
+
+	void Start()
+	{
+		initialPosition = transform.position;
+		initialRotation = transform.rotation;
+	}
+
 	public override void OnDrop()
 	{
+		Debug.Log("발사중지");
 		isShooting = false; // 발사 중지
+
+		if (gameOVER.activeSelf)
+		{
+			transform.position = initialPosition;
+			transform.rotation = initialRotation;
+		}
 	}
+
+	public GameObject gameOVER;//게임오버 넣기
+
+	void Update()
+	{
+		//게임이 종료되면 총알이 발사되지 않음
+		if (gameOVER.activeSelf)
+		{
+			isShooting = false;
+		}
+		//게임이 시작되면 다시 총알 발사되게.
+		/*else if (gameOVER != null)
+		{
+			isShooting = !gameOVER.activeSelf;
+		}*/
+	}
+
 
 	//1. update
 	//2. ISR 방식 : gunShootingSpeed + 마우스 클릭한 시간(shootingTIme)

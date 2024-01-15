@@ -57,16 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\01.Script\GameSystem\GameStartOverButton.cs" />
-    <Compile Include="Assets\01.Script\Guard\Life.cs" />
     <Compile Include="Assets\01.Script\Gun System\BulletDestroy.cs" />
     <Compile Include="Assets\01.Script\Gun System\GunBullet.cs" />
     <Compile Include="Assets\01.Script\Gun System\PickUpEvent.cs" />
     <Compile Include="Assets\01.Script\Gun System\TFTSystemScript.cs" />
-    <Compile Include="Assets\01.Script\Monster\HP\LifePoint.cs" />
     <Compile Include="Assets\01.Script\Monster\HP\MobsLifeSystem.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterClear.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterCreationscript.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterMovemont.cs" />
+    <Compile Include="Assets\01.Script\Player\Life.cs" />
+    <Compile Include="Assets\01.Script\Player\Score.cs" />
     <Compile Include="Assets\01.Script\Test.cs" />
     <Compile Include="Assets\TeleportGun\gun.cs" />
     <Compile Include="Assets\TeleportGun\particle.cs" />
