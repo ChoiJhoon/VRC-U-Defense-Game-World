@@ -10,7 +10,9 @@ public class MobsLifeSystem : UdonSharpBehaviour
 {
 	private int count = 0;
 	public int maxCount = 1; //Mobs Hp
-	//점수가 올라갈 때 마다 HP 올려주기
+							 //점수가 올라갈 때 마다 HP 올려주기
+
+	private Score scoreScript;
 
 	private void OnTriggerEnter(Collider other)
 
@@ -24,15 +26,22 @@ public class MobsLifeSystem : UdonSharpBehaviour
 			maxCount--;
 			DisplayHP(maxCount);
 		}
-
+		
 		if (count == maxCount)
 		{
+			/*ScoreManager scoreManager = scoreManagerObject.GetComponent<ScoreManager>();
+			if (scoreManager != null)
+			{
+				scoreManager.AddScore(10);  // 몬스터가 죽을 때마다 10점씩 점수 추가
+			}*/
+			Die();
 			Destroy(gameObject); //이걸 쓰면 제거됨
 		}
 	}
 
 	//HP
 	public TextMeshPro HPText;  //인스펙터에서 연결해야함.
+	public GameObject scoreObject;
 
 	public void DisplayHP(int HPS)
 	{
@@ -41,7 +50,37 @@ public class MobsLifeSystem : UdonSharpBehaviour
 
 	void Start()
 	{
+		if (scoreObject != null)
+		{
+			scoreScript = scoreObject.GetComponent<Score>();
+
+			if (scoreScript == null)
+			{
+				Debug.LogError("Score script not found on the assigned object.");
+			}
+			else
+			{
+				Debug.Log("Score script successfully assigned.");
+			}
+		}
+		else
+		{
+			Debug.LogError("Score object not assigned in the Inspector.");
+		}
+
 		DisplayHP(maxCount);
+	}
+
+	private void Die()
+	{
+		// 몬스터가 죽을 때의 처리
+		if (scoreScript != null)
+		{
+			scoreScript.AddScoreOnMonsterDeath(1); // 몬스터가 죽을 때마다 1점씩 점수 추가
+			Debug.Log("Score added on monster death.");
+		}
+
+		Destroy(gameObject);
 	}
 
 }

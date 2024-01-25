@@ -60,6 +60,7 @@
     <Compile Include="Assets\01.Script\Gun System\BulletDestroy.cs" />
     <Compile Include="Assets\01.Script\Gun System\GunBullet.cs" />
     <Compile Include="Assets\01.Script\Gun System\PickUpEvent.cs" />
+    <Compile Include="Assets\01.Script\Gun System\ShootingSystem.cs" />
     <Compile Include="Assets\01.Script\Gun System\TFTSystemScript.cs" />
     <Compile Include="Assets\01.Script\Monster\HP\MobsLifeSystem.cs" />
     <Compile Include="Assets\01.Script\Monster\MonsterClear.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Assets\01.Script\Player\Life.cs" />
     <Compile Include="Assets\01.Script\Player\Score.cs" />
     <Compile Include="Assets\01.Script\Test.cs" />
+    <Compile Include="Assets\Red Nebula Studios\RNLowPolyDungeonLite\Scenes\Demo Scripts\ActivateProp.cs" />
     <Compile Include="Assets\TeleportGun\gun.cs" />
     <Compile Include="Assets\TeleportGun\particle.cs" />
     <Compile Include="Assets\Tolyscripts\TolysAttachmentSystem\scripts\SmartPickupSync.cs" />
@@ -151,6 +153,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Red Nebula Studios\RNLowPolyDungeonLite\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
@@ -855,6 +858,10 @@
       <Project>{251CB55F-C334-B1BF-D2A7-C7F53E899F56}</Project>
       <Name>VRC.Udon.Serialization.OdinSerializer</Name>
     </ProjectReference>
+    <ProjectReference Include="vrchat.jordo.easyquestswitch.Editor.csproj">
+      <Project>{D8B0E224-F562-64D7-EAD9-750ADD7F6CCF}</Project>
+      <Name>vrchat.jordo.easyquestswitch.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="VRC.ClientSim.Editor.csproj">
       <Project>{858AF1B4-4C24-5FCD-D5CD-EA4A93B0FD23}</Project>
       <Name>VRC.ClientSim.Editor</Name>
@@ -866,6 +873,10 @@
     <ProjectReference Include="UdonSharp.Editor.csproj">
       <Project>{3EF77A91-D29C-00D9-125D-39CF47F16AF3}</Project>
       <Name>UdonSharp.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="nadena.dev.ndmf.runtime.csproj">
+      <Project>{9086BCDD-2A8B-F08A-BFB5-C8153CAB5EF5}</Project>
+      <Name>nadena.dev.ndmf.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.csproj">
       <Project>{E4FAFEC8-0C76-3F4D-8559-AD84BCF45A15}</Project>
@@ -903,6 +914,10 @@
       <Project>{0745AFED-FCCD-F8AB-40E4-537E398BAE5F}</Project>
       <Name>UniTask.DOTween</Name>
     </ProjectReference>
+    <ProjectReference Include="nadena.dev.ndmf.csproj">
+      <Project>{76E09FD0-0CBC-BC51-E689-85C837FE8E95}</Project>
+      <Name>nadena.dev.ndmf</Name>
+    </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.csproj">
       <Project>{1E5311F1-C7AC-88BB-344F-FF6350895DE2}</Project>
       <Name>VRC.SDKBase</Name>
@@ -910,6 +925,10 @@
     <ProjectReference Include="VRC.Udon.Editor.csproj">
       <Project>{64D39FF1-D46D-D150-7A86-3ABC1807E5A3}</Project>
       <Name>VRC.Udon.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VRWorldToolkit.Editor.csproj">
+      <Project>{C9A169B9-4757-494B-6EEF-179296C35562}</Project>
+      <Name>VRWorldToolkit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
       <Project>{C1D3917F-28A9-8792-47F4-78EACED24D74}</Project>
@@ -922,6 +941,10 @@
     <ProjectReference Include="VRC.SDK3.Editor.csproj">
       <Project>{AF9E4446-26A2-52A6-D45E-8B5E26D5AAB9}</Project>
       <Name>VRC.SDK3.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="vrchat.jordo.easyquestswitch.csproj">
+      <Project>{0DDEE02D-052E-E746-3695-842B57387D0E}</Project>
+      <Name>vrchat.jordo.easyquestswitch</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.Editor.BuildPipeline.csproj">
       <Project>{7CFC8970-DF24-AF2C-0C9C-98898B5E8201}</Project>

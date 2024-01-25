@@ -7,16 +7,19 @@ using System.Diagnostics;
 
 public class MonsterCreationscript : UdonSharpBehaviour
 {
-        const float create_interval = 0.18f;//생성 시간
-        float mCreatTime = 0; //객채 생성 이후 시간 
-        float mTotalTime = 0;//경과한 전체 시간
-        float mNextCreateInterval = create_interval;//다음 객체 생성까지의 간격
-        int mPhase  = 1; //
-        public GameObject Monsters;//
-        [SerializeField]
-        private float MobGenSpeed;
+    const float create_interval = 0.18f;//생성 시간
+    float mCreatTime = 0; //객채 생성 이후 시간 
+    float mTotalTime = 0;//경과한 전체 시간
+    float mNextCreateInterval = create_interval;//다음 객체 생성까지의 간격
+	int mPhase = 1; //
+	public GameObject Monsters;//
+	[SerializeField]
+	private float MobGenSpeed;
 
-    void Start()
+    public float x1 = 0f;
+    public float x2 = 0f;
+
+	void Start()
     {
     }
 
@@ -41,7 +44,7 @@ public class MonsterCreationscript : UdonSharpBehaviour
     }
     private void creatMonster(float z){
         float y = 0.5f;
-        float x = Random.Range(-4f, 4f);//지정된 범위 내에서 무작위 x좌표 생성하는 코드[수정필요]
+        float x = Random.Range(x1, x2);//지정된 범위 내에서 무작위 x좌표 생성하는 코드[수정필요]
         createObject(Monsters, new Vector3(x, y, z), Quaternion.identity);// 주어진 위치와 회전으로 GameObject를 생성하는 메서드
         }
 

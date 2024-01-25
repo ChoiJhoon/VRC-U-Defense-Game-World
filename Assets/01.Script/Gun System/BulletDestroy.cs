@@ -23,4 +23,14 @@ public class BulletDestroy : UdonSharpBehaviour
 			Destroy(gameObject); // 총알 파괴
 		}
 	}
+	private void OnTriggerEnter(Collider other)
+	{
+		//몬스터랑 접촉 시 총알이 없어지게 만들기
+		MobsLifeSystem bulletDelSys = other.gameObject.GetComponent<MobsLifeSystem>();
+		
+		if (bulletDelSys != null)
+		{
+			Destroy(gameObject);
+		}
+	}
 }
